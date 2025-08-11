@@ -28,6 +28,14 @@ The core of the application is a Python script that:
     ```bash
     pip install openai anthropic google-generativeai gradio python-dotenv huggingface-hub transformers
     ```
+## Deploying the Hugging Face Inference Endpoint
+
+To use the `CodeQwen` model, you need to deploy it as a Hugging Face Inference Endpoint.
+
+1.  **Log in to Hugging Face Hub**: Make sure you are logged in to your Hugging Face account and have an access token (`HF_TOKEN`) with the necessary permissions.
+2.  **Deploy the model**: Navigate to the `Qwen/CodeQwen1.5-7B-Chat` model page on the Hugging Face Hub. From there, you can deploy the model to an Inference Endpoint.
+3.  **Configure the endpoint**: The endpoint will provide a URL, such as `https://h1vdol7jxhje3mpn.us-east-1.aws.endpoints.huggingface.cloud`, which you will need to use in your code.
+4.  **Set `HF_TOKEN`**: Ensure your `HF_TOKEN` is set in the `.env` file. The application uses this token for authentication.
 
 ## Usage
 
